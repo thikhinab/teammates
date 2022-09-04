@@ -12,6 +12,8 @@ import teammates.common.datatransfer.questions.FeedbackMcqQuestionDetails;
 import teammates.common.datatransfer.questions.FeedbackMcqResponseDetails;
 import teammates.common.datatransfer.questions.FeedbackMsqQuestionDetails;
 import teammates.common.datatransfer.questions.FeedbackMsqResponseDetails;
+import teammates.common.datatransfer.questions.FeedbackNumericalRangeQuestionDetails;
+import teammates.common.datatransfer.questions.FeedbackNumericalRangeResponseDetails;
 import teammates.common.datatransfer.questions.FeedbackNumericalScaleQuestionDetails;
 import teammates.common.datatransfer.questions.FeedbackNumericalScaleResponseDetails;
 import teammates.common.datatransfer.questions.FeedbackQuestionType;
@@ -48,7 +50,9 @@ public enum QuestionTypeStructures {
     DEFAULT_RUBRIC_QUESTION_DETAILS(new FeedbackRubricQuestionDetails("")),
     DEFAULT_RUBRIC_RESPONSE_DETAILS(new FeedbackRubricResponseDetails()),
     DEFAULT_TEXT_QUESTION_DETAILS(new FeedbackTextQuestionDetails("")),
-    DEFAULT_TEXT_RESPONSE_DETAILS(new FeedbackTextResponseDetails());
+    DEFAULT_TEXT_RESPONSE_DETAILS(new FeedbackTextResponseDetails()),
+    DEFAULT_NUMRANGE_QUESTION_DETAILS(new FeedbackNumericalRangeQuestionDetails("")),
+    DEFAULT_NUMRANGE_RESPONSE_DETAILS(new FeedbackNumericalRangeResponseDetails());
     // CHECKSTYLE.ON:JavadocVariable
 
     @JsonValue
